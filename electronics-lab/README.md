@@ -1,30 +1,27 @@
 # Electronics Lab
 
-This folder contains hardware-oriented projects and prototypes developed for **Electronics Laboratory** and related courses.  
-These projects typically combine **microcontrollers**, **sensors**, **power/electronics modules**, and **embedded software**.
+This folder contains hardware-focused projects developed for my **Electronics Laboratory** and related coursework.  
+The projects here combine **microcontrollers**, **sensors**, **power monitoring modules**, and embedded software.
 
 ---
 
-## 📁 Included Projects
+## 📁 Included Project
 
 ### 🔹 OptiWatt – Smart Energy Management System  
-A single-room smart energy management prototype that combines:
+A single-room smart energy management prototype that integrates:
 
-- ESP32-based embedded controller  
+- ESP32-based controller  
 - PZEM-004T power meters for per-load energy monitoring  
-- Ultrasonic sensors for privacy-preserving occupancy detection  
-- Local web dashboard for monitoring and basic control  
+- Ultrasonic sensors for occupancy detection  
+- Local web dashboard / UI for monitoring and basic control  
 
-Project folder:  
-[`electronics-lab/optiwatt/`](optiwatt/)
-
-*(The OptiWatt project includes firmware, documentation, and a prototype web UI.)*
+Project folder: [`optiwatt/`](optiwatt/)
 
 ---
 
 ## 🎯 Purpose
 
-To document and share my electronics-related work, especially projects where **hardware, firmware, and software** come together — like OptiWatt.
+To document and share my electronics-related work, especially projects where **hardware, firmware, and software** come together.
 
 ---
 
