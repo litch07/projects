@@ -42,28 +42,29 @@ You may import this folder into **Overleaf** or any LaTeX environment to rebuild
 ## 📁 Folder Structure
 
 ```
-    docs/
-    ├── proposal/
-    │   ├── OptiWatt_Project_Proposal.docx
-    │   └── OptiWatt_Project_Proposal.pdf
-    ├── OptiWatt_Report.pdf
-    └── latex/
-       ├── main.tex
-       ├── 7DaysReading.png
-       ├── appflow.png
-       ├── autocut.png
-       ├── booth1.jpg
-       ├── booth2.jpg
-       ├── esp32.png
-       ├── fullcircuit.png
-       ├── goal.png
-       ├── occupancy.png
-       ├── pzem-004t.jpg
-       ├── pzemflow.png
-       ├── relay.jpg
-       ├── turnoffafterdelay.png
-       ├── ultrasonic.jpg
-       └── website.png
+docs/
+├── proposal/
+│   ├── OptiWatt_Project_Proposal.docx
+│   └── OptiWatt_Project_Proposal.pdf
+├── OptiWatt_Report.pdf
+└── latex/
+    ├── main.tex
+    ├── 7DaysReading.png
+    ├── appflow.png
+    ├── autocut.png
+    ├── booth1.jpg
+    ├── booth2.jpg
+    ├── esp32.png
+    ├── fullcircuit.png
+    ├── goal.png
+    ├── occupancy.png
+    ├── pzem-004t.jpg
+    ├── pzemflow.png
+    ├── relay.jpg
+    ├── turnoffafterdelay.png
+    ├── ultrasonic.jpg
+    └── website.png
+
 ```
 
 ---
