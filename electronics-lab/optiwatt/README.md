@@ -22,12 +22,12 @@ OptiWatt is designed to:
 
 This project is organized into separate folders for firmware, UI, documentation, and hardware.
 
-| Folder | Description | Key Contents |
-| :--- | :--- | :--- |
-| **[`firmware/`](firmware/)** | ESP32 embedded code | Arduino/PlatformIO source files. |
-| **[`web-ui/`](web-ui/)** | Standalone frontend (HTML/CSS/JS) | Static Web UI prototype. |
-| **[`docs/`](docs/)** | Report, write-up, and source files | Final Paper PDF, LaTeX source files. |
-| **[`hardware/`](hardware/)** | Diagrams and design files | Schematics, wiring, and block diagrams. |
+| Folder | Key Contents |
+| :--- | :--- |
+| **[`firmware/`](firmware/)** | Arduino/PlatformIO source files. |
+| **[`web-ui/`](web-ui/)** | Static Web UI prototype. |
+| **[`docs/`](docs/)** | Final Paper PDF, LaTeX source files. |
+| **[`hardware/`](hardware/)** | Schematics, wiring, and block diagrams. |
 
 ### Documentation and Schematics Structure
 
@@ -45,11 +45,25 @@ optiwatt/
 │   ├── index.html
 │   ├── styles.css
 │   └── script.js
-├── docs/
+└── docs/
 │   ├── OptiWatt_Report.pdf
 │   └── latex/
 │       ├── main.tex
-│       └── ...
+│       ├── 7DaysReading.tex
+│       ├── appflow.tex
+│       ├── autocut.tex
+│       ├── booth1.tex
+│       ├── booth2.tex
+│       ├── esp32.tex
+│       ├── fullcircuit.tex
+│       ├── goal.tex
+│       ├── occupancy.tex
+│       ├── pzem-004t.tex
+│       ├── pzemflow.tex
+│       ├── relay.tex
+│       ├── turnoffafterdelay.tex
+│       ├── ultrasonic.tex
+│       └── website.tex
 ├── hardware/
 │   └── schematics/
 │       └── optiwatt_schematic.png
@@ -97,18 +111,16 @@ The Web UI prototype in [`web-ui/`](web-ui/) is a static frontend for OptiWatt:
 cd web-ui
 # Then open index.html in your browser
 ```
-No build step or server is required.
+
 ---
 
 ## 📄 Paper & LaTeX
 
-The final report/paper should be placed under:
+The final report/paper:
 [`docs/OptiWatt_Report.pdf`](docs/OptiWatt_Report.pdf)
 
-The LaTeX source should go into:
+The LaTeX source:
 [`docs/latex/`](docs/latex/)
-
-This directory can include: `main.tex`, `sections/`, `figures/`, `.bib` file, etc. This keeps your academic work, source, and compiled PDF all in one place, neatly tied to the code and hardware.
 
 ---
 
@@ -116,12 +128,6 @@ This directory can include: `main.tex`, `sections/`, `figures/`, `.bib` file, et
 
 All hardware-related visuals and design files belong under [`hardware/`](hardware/), specifically:
 [`hardware/schematics/`](hardware/schematics/)
-
-Place:
-* Circuit diagrams
-* Wiring schematics
-* Block diagrams
-* Any relevant design images
 
 ---
 
@@ -136,4 +142,4 @@ Place:
 
 ## 👤 Maintainer
 
-**Sadid Ahmed (litch07)** – firmware, documentation, and repository structure.
+[**Sadid Ahmed (litch07)**](https://github.com/litch07) – firmware, documentation, and repository structure.
