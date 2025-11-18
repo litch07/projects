@@ -1,8 +1,7 @@
 # 🔧 OptiWatt Hardware Resources
 
-This directory contains **all hardware-related files** for the OptiWatt system, including wiring diagrams, block diagrams, schematics, and circuit design documentation.
-
-The hardware layer covers sensors, relays, ESP32 interfacing, and AC power monitoring integration.
+This directory contains **hardware-related files** for the OptiWatt system, currently including the wiring diagram.  
+It covers ESP32 interfacing, relays, sensors, and AC power monitoring connections.
 
 ---
 
@@ -11,7 +10,7 @@ The hardware layer covers sensors, relays, ESP32 interfacing, and AC power monit
 ```
 hardware/
 ├── schematics/
-│   ├── optiwatt_schematic.png
+│   ├── wiring_diagram.png
 │   └── README.md
 └── README.md
 ```
@@ -20,35 +19,36 @@ hardware/
 
 ## 🏗️ Hardware Components
 
-The OptiWatt system includes:
+The OptiWatt system uses:
 
 - **ESP32 DevKit V1** (main controller)  
-- **PZEM-004T v3.0** AC energy meters  
-- **Dual Ultrasonic Sensors** for occupancy  
-- **Relays (5V)** for LED and Plug control  
-- **DC power supply + level shifting (if required)**  
+- **PZEM-004T v3.0** AC energy meter  
+- **Dual Ultrasonic Sensors** for occupancy detection  
+- **Relays (5V)** for LED and plug control  
+- **DC power supply** for sensors and relays  
 - **Manual switches** for local override  
 
 ---
 
-## 📘 What You’ll Find Here
+## 📘 Wiring Diagram
 
-- Complete system schematic  
-- Wiring diagram for ESP32 + relays + sensors  
-- PZEM-004T connection references  
-- Block diagram for entire device flow  
-- Hardware layout used in the implementation  
+The diagram shows physical connections for:  
 
-These diagrams support the firmware implementation found in `firmware/`.
+- ESP32 pins  
+- PZEM-004T RX/TX and AC connections  
+- Relays controlling LEDs and plugs  
+- Ultrasonic sensor wiring  
+- Power distribution  
+
+It is ideal for breadboard prototyping, PCB planning, and final installation.
 
 ---
 
 ## 🛠 Usage Notes
 
-- Always verify AC wiring separately — **mains voltage is dangerous**.  
-- PZEM modules use TTL serial; ensure correct RX/TX mapping.  
-- Ultrasonic sensors require stable 5V supply.  
-- Relay modules must use proper isolation if connected to AC loads.
+- Verify wiring matches firmware pin definitions.  
+- Ensure proper isolation when handling AC loads.  
+- Provide stable power for sensors and relays.  
 
 ---
 
