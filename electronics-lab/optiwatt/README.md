@@ -130,8 +130,6 @@ xdg-open index.html
 ```
 Note: All data is currently demo/simulated; there is no live connection to the ESP32 yet.
 
-No server is required.
-
 ---
 
 ## 📄 Documentation
