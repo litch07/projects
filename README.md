@@ -26,5 +26,7 @@ Projects and experiments built outside of coursework — driven by curiosity, se
 
 ---
 
-## 📁 Structure
+## 📝 Goal
+
+My aim is to write **clear, maintainable, and well-documented code** while building a strong foundation in software development and core CS concepts.
 
