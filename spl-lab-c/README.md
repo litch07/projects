@@ -1,19 +1,33 @@
-# Structured Programming Lab (SPL)
+# SPL Lab C Project
 
-This folder contains the projects I completed for the **Structured Programming Laboratory** course (SPL).  
-These projects focus on strengthening fundamentals in **C programming**, clean modular code, and logical problem solving.
+This repository contains a simple C program made for the SPL (Structured Programming Language) Lab.  
+The project is beginner-friendly and demonstrates basic file handling, searching, and record management.
 
-### 🧠 Topics Covered
-- Basic C syntax  
-- Conditions, loops, and functions  
-- Arrays, strings, and simple pointers  
-- File handling  
+## 📌 Features
+- Add new records to a text file
+- Search records from the file
+- Check if a file exists
+- Simple line-spacing and formatting
+- Fully written in C with easy-to-understand logic
 
-### 📂 Project Folders
-Each project has its own folder with a README and source code.
+## 📁 File Structure
+```
+└── spl-lab-c/
+    ├── main.c
+    └── README.md
+```
 
-Examples:
-- `contact-management-system/` - File-based contact management system  
+## 🛠 Usage
+Compile using GCC:
 
-### 🎯 Purpose
-These SPL projects helped build my core programming foundation and prepared me for advanced courses like OOP and Data Structures.
+```bash
+gcc main.c -o program
+```
+
+Run the program:
+```bash
+./program
+```
+
+## 🙋‍♂️ Author
+Sadid Ahmed (litch07)
