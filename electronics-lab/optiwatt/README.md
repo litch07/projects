@@ -37,10 +37,7 @@ The repository is organized into firmware, UI, documentation, and hardware resou
 Example structure:
 
 ```
-optiwatt/
-├── proposal/
-│   ├── OptiWatt_Project_Proposal.docx
-│   └── OptiWatt_Project_Proposal.pdf 
+optiwatt/ 
 ├── firmware/
 │   └── OptiWatt.ino 
 ├── web-ui/
@@ -53,6 +50,9 @@ optiwatt/
 │   ├── pricing.js
 │   └── script.js
 ├── docs/
+│   ├── proposal/
+│   │   ├── OptiWatt_Project_Proposal.docx
+│   │   └── OptiWatt_Project_Proposal.pdf
 │   ├── OptiWatt_Report.pdf
 │   └── latex/
 │       ├── main.tex
