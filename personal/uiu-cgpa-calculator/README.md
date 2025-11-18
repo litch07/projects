@@ -36,6 +36,7 @@ It also includes a separate **grading scale window** showing letter grades, grad
 
 ---
 
+```text
 ## 📁 Project Structure
 
 uiu-cgpa-calculator/
@@ -45,6 +46,7 @@ uiu-cgpa-calculator/
 ├── Grading.java       # Separate window showing grade–point–marks table
 └── README.md          # Project documentation
 
+```
 ## ▶️ How to Run
 
 You have two main options to run this application: using the terminal or an Integrated Development Environment (IDE).
