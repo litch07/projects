@@ -43,6 +43,9 @@ You may import this folder into **Overleaf** or any LaTeX environment to rebuild
 
 ```
     docs/
+    ├── proposal/
+    │   ├── OptiWatt_Project_Proposal.docx
+    │   └── OptiWatt_Project_Proposal.pdf
     ├── OptiWatt_Report.pdf
     └── latex/
        ├── main.tex
