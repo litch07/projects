@@ -69,7 +69,7 @@ optiwatt/
 │       └── website.png
 └── hardware/
     └── schematics/
-        └── optiwatt_schematic.png
+        └── wiring_diagram.png
 ```
 
 ---
