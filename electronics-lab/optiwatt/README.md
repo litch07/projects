@@ -1,145 +1,151 @@
-# 💡 OptiWatt – Smart Energy Management System
+# ⚡ OptiWatt – Smart Energy Management System
 
-OptiWatt is a **single-room smart energy management system** that combines real-time power monitoring with **occupancy-aware automation**.
-
-It uses an **ESP32** as the main controller, AC power meters for per-load monitoring, ultrasonic sensors for occupancy detection, and a web interface for monitoring and control.
-
----
-
-## ⚡ Overview
-
-OptiWatt is designed to:
-
-* Measure per-load **voltage, current, power, energy (kWh), power factor, frequency**.
-* Detect room **occupancy** (entry/exit) using non-imaging ultrasonic sensors.
-* Automatically switch selected loads **ON/OFF based on occupancy**.
-* Estimate **energy cost** using a slab-based tariff model.
-* Provide a **local dashboard** and a **separate Web UI prototype** for richer visualization.
+OptiWatt is a single-room smart energy management platform that combines real-time power monitoring with occupancy-based automation.  
+The system uses an ESP32 microcontroller for data acquisition and control, AC power meters for load monitoring, ultrasonic sensors for entry/exit detection, and a lightweight web interface for visualization.
 
 ---
 
-## 📂 Repository Layout
+## 📌 Overview
 
-This project is organized into separate folders for firmware, UI, documentation, and hardware.
+OptiWatt provides:
 
-| Folder | Key Contents |
-| :--- | :--- |
-| **[`firmware/`](firmware/)** | Arduino/PlatformIO source files. |
-| **[`web-ui/`](web-ui/)** | Static Web UI prototype. |
-| **[`docs/`](docs/)** | Final Paper PDF, LaTeX source files. |
-| **[`hardware/`](hardware/)** | Schematics, wiring, and block diagrams. |
+- Real-time measurements of **voltage, current, power, energy (kWh), frequency, and power factor**  
+- Occupancy detection using a dual-ultrasonic entry/exit sensor setup  
+- Automatic load switching based on room occupancy  
+- Monthly energy cost estimation using a slab-based tariff model  
+- A built-in ESP32 web dashboard and a separate static Web UI prototype
 
-### Documentation and Schematics Structure
+---
 
-* **Final Paper PDF:** Should be placed directly in [`docs/`](docs/) (e.g., `docs/OptiWatt_Report.pdf`).
-* **LaTeX Source:** Place all source files under [`docs/latex/`](docs/latex/).
-* **Schematics:** Place all diagrams and design files under [`hardware/schematics/`](hardware/schematics/) (e.g., `hardware/schematics/optiwatt_schematic.png`).
+## 📁 Repository Structure
 
-A minimal structure might look like:
+The repository is organized into firmware, UI, documentation, and hardware resources.
 
-```text
+| Folder | Description |
+|-------|-------------|
+| **[`firmware/`](firmware/)** | ESP32 source code (Arduino/PlatformIO). |
+| **[`web-ui/`](web-ui/)** | Static prototype of the Web UI (HTML/CSS/JS). |
+| **[`docs/`](docs/)** | Final report and LaTeX project files. |
+| **[`hardware/`](hardware/)** | Circuit diagrams, wiring, and design assets. |
+
+### Documentation and Schematics Layout
+
+- **Final Report:** placed directly under `docs/` (e.g., `OptiWatt_Report.pdf`)  
+- **LaTeX Source:** stored inside `docs/latex/`  
+- **Hardware/Schematics:** stored inside `hardware/schematics/`
+
+Example structure:
+
+```
 optiwatt/
 ├── firmware/
-│   └── ... ESP32 code ...
 ├── web-ui/
 │   ├── index.html
+│   ├── login.html
+│   ├── rooms.html
+│   ├── rooms.js
+│   ├── devices.html
 │   ├── styles.css
+│   ├── pricing.js
 │   └── script.js
-└── docs/
+├── docs/
 │   ├── OptiWatt_Report.pdf
 │   └── latex/
 │       ├── main.tex
-│       ├── 7DaysReading.tex
-│       ├── appflow.tex
-│       ├── autocut.tex
-│       ├── booth1.tex
-│       ├── booth2.tex
-│       ├── esp32.tex
-│       ├── fullcircuit.tex
-│       ├── goal.tex
-│       ├── occupancy.tex
-│       ├── pzem-004t.tex
-│       ├── pzemflow.tex
-│       ├── relay.tex
-│       ├── turnoffafterdelay.tex
-│       ├── ultrasonic.tex
-│       └── website.tex
-├── hardware/
-│   └── schematics/
-│       └── optiwatt_schematic.png
-└── README.md
-
+│       ├── 7DaysReading.png
+│       ├── appflow.png
+│       ├── autocut.png
+│       ├── booth1.jpg
+│       ├── booth2.jpg
+│       ├── esp32.png
+│       ├── fullcircuit.png
+│       ├── goal.png
+│       ├── occupancy.png
+│       ├── pzem-004t.jpg
+│       ├── pzemflow.png
+│       ├── relay.jpg
+│       ├── turnoffafterdelay.png
+│       ├── ultrasonic.jpg
+│       └── website.png
+└── hardware/
+    └── schematics/
+        └── optiwatt_schematic.png
 ```
+
+---
 
 ## 🔧 Firmware (ESP32)
 
-The firmware (in [`firmware/`](firmware/)) is responsible for:
+The firmware located in `firmware/` handles:
 
-* Reading measurements from AC power meter modules (e.g., PZEM-004T).
-* Handling ultrasonic sensors for entry/exit detection and occupancy count.
-* Running the automation logic (e.g., turn loads off when the room is vacant).
-* Serving a built-in web page over HTTP on the local network.
+- Interfacing with AC power meter modules (e.g., PZEM-004T)  
+- Entry/exit detection using ultrasonic sensors  
+- Occupancy counting and automation logic  
+- Relay control for automatic load switching  
+- Hosting a local web dashboard via HTTP  
 
-### How to Run (Firmware)
+### Running the Firmware
 
-1.  Open the code from [`firmware/`](firmware/) in **Arduino IDE** or **PlatformIO**.
-2.  Install the required **ESP32 board support** and any libraries used (e.g., PZEM004T driver).
-3.  **Update:**
-    * Wi-Fi credentials.
-    * GPIO pin mappings for sensors, relays, etc.
-4.  Select the correct ESP32 board and port, then **compile and upload**.
-5.  After boot, check the Serial Monitor for the assigned IP address.
-6.  Open a browser on the same network and visit:
-    ```
-    http://<ESP32_IP_ADDRESS>/
-    ```
-    to access the built-in dashboard.
+1. Open the firmware in **Arduino IDE** or **PlatformIO**  
+2. Install ESP32 board support and required libraries  
+3. Configure:
+   - Wi-Fi credentials  
+   - Sensor pins  
+   - Relay pins  
+4. Build and upload to the ESP32  
+5. Open the Serial Monitor to view the assigned IP address  
+6. Access the dashboard in a browser:
+
+```
+http://<ESP32_IP_ADDRESS>/
+```
 
 ---
 
 ## 🌐 Web UI Prototype
 
-The Web UI prototype in [`web-ui/`](web-ui/) is a static frontend for OptiWatt:
+The `web-ui/` folder contains a static UI prototype. It is not connected to the firmware yet.
 
-* Built with **HTML, CSS, and vanilla JavaScript**.
-* Designed to show **room and device-level energy usage, daily/monthly cost,** device states, and automation toggles.
-* Currently uses **demo/simulated data only** (no live hardware connection yet).
-
-### Previewing the Web UI
+### To preview:
 
 ```bash
-cd web-ui
-# Then open index.html in your browser
+git clone https://github.com/litch07/projects.git
+cd projects/electronics-lab/optiwatt/web-ui
+```
+
+Then open `index.html` in any browser.
+
+No server is required.
+
+---
+
+## 📄 Documentation
+
+- Final report: `docs/OptiWatt_Report.pdf`  
+- Full LaTeX project: `docs/latex/`
+
+---
+
+## 🧩 Hardware Resources
+
+Schematics and hardware references are located in:
+
+```
+hardware/schematics/
 ```
 
 ---
 
-## 📄 Paper & LaTeX
+## 🔭 Future Improvements
 
-The final report/paper:
-[`docs/OptiWatt_Report.pdf`](docs/OptiWatt_Report.pdf)
-
-The LaTeX source:
-[`docs/latex/`](docs/latex/)
-
----
-
-## 🧩 Hardware & Schematics
-
-All hardware-related visuals and design files belong under [`hardware/`](hardware/), specifically:
-[`hardware/schematics/`](hardware/schematics/)
-
----
-
-## 🔮 Future Work
-
-* Connect the Web UI to live firmware via **REST/WebSocket API**.
-* Add **historical data logging** and trend charts.
-* Extend automation (time-based, thresholds, multi-room).
-* Polish UI/UX and improve mobile responsiveness.
+- Connect the Web UI to live device data  
+- Add historical data logging and charts  
+- Improve automation rules (multi-room, thresholds, timers)  
+- Enhance mobile responsiveness and UI layout  
 
 ---
 
 ## 👤 Maintainer
 
-[**Sadid Ahmed (litch07)**](https://github.com/litch07) – firmware, documentation, and repository structure.
+**Sadid Ahmed (litch07)**  
+Firmware, documentation, hardware integration, and UI structure.
