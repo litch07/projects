@@ -1,6 +1,6 @@
 # Projects
 
-This repository contains my **course-based** and **personal** software projects, mainly developed in **C, C++**, and **Java**.  
+This repository contains my **course-based** and **personal** projects, mainly developed in **C, C++**, and **Java**.  
 Each project is organized into its own folder with a clear structure and a README explaining the idea, features, and how to run it.
 
 ---
