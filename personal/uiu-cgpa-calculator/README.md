@@ -38,7 +38,6 @@ It also includes a separate **grading scale window** showing letter grades, grad
 
 ## 📁 Project Structure
 
-```text
 uiu-cgpa-calculator/
 │
 ├── Main.java          # Entry point – launches the Calculator window
