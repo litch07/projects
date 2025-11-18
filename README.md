@@ -17,8 +17,6 @@ Focus on clean procedural C programming with:
 - arrays, pointers  
 - basic file handling
 
---
-
 ### 🔸 Object Oriented Programming Lab 
 Location: [`oop-lab-java/`](oop-lab-java/)  
 Covers object-oriented design in Java, including:
