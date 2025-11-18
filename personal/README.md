@@ -1,41 +1,39 @@
 # Personal Projects
 
-This folder contains software projects I built outside of university coursework — created from curiosity, practice, and self-learning.  
-These projects help me explore ideas, try new concepts, and improve my understanding of Java, C, and C++ beyond academic requirements.
+This folder contains **self-built, independent projects** created outside my university coursework.  
+Each project is organized in its own directory and focuses on improving my Java skills, problem-solving ability, and software design practices.
 
 ---
 
-## 🎯 Goals of My Personal Projects
+## 📁 Included Projects
 
-- Strengthen practical problem-solving skills  
-- Experiment with new ideas and programming techniques  
-- Learn to structure, design, and document software properly  
-- Build small tools that solve real problems  
+### 🔹 [UIU CGPA Calculator (Java Swing)](uiu-cgpa-calculator/)
+A GUI-based CGPA/GPA calculator built for UIU students.  
+This project demonstrates:
 
----
-
-## 📂 Projects Included
-
-### **1. UIU CGPA Calculator (Java GUI)**
-A graphical CGPA calculator for UIU students.  
-Built using Java Swing, with plans to add *retake*, *improvement*, and *repeat course* handling.
-
-*(A dedicated README will be added inside the project folder.)*
+- Java Swing–based user interface  
+- Event handling  
+- Dynamic course row addition  
+- GPA & CGPA computation logic  
+- Input validation  
+- A separate grading scale window (letter grade → grade point → marks range)
 
 ---
 
-### **2. Banking System (Java)**
-A console-based or GUI-based Java application (depending on your implementation) simulating basic banking operations such as account creation, deposit, withdrawal, and balance inquiry.
+### 🔹 [Banking System (Java, OOP)](banking-system-java/)
+A console-based banking system showcasing solid Object-Oriented Programming concepts.  
+The project includes:
 
-*(Full documentation will be available in the project folder.)*
+- User registration & login  
+- Account balance view  
+- Deposit & withdrawal operations  
+- Personal transaction logs  
+- Admin system (view/search/remove users, view activity logs)  
+- Activity & transaction logging system  
+- Inheritance and clean class structure
 
 ---
 
-## 📁 Folder Structure
+## 🙋‍♂️ Author  
+**Sadid Ahmed** (litch07)
 
-personal/
-├── uiu-cgpa-calculator/
-│ └── README.md (auto-generated later)
-├── banking-system-java/
-│ └── README.md (auto-generated later)
-└── ... (future projects)
