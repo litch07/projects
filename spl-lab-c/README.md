@@ -1,4 +1,4 @@
-# SPL Lab C Project
+# Structured Programming Language Lab (SPL Lab) Project
 
 This repository contains a simple C program made for the SPL (Structured Programming Language) Lab.  
 The project is beginner-friendly and demonstrates basic file handling, searching, and record management.
@@ -14,6 +14,7 @@ The project is beginner-friendly and demonstrates basic file handling, searching
 ```
 └── spl-lab-c/
     ├── main.c
+    ├── All-Contact.txt
     └── README.md
 ```
 
