@@ -1,34 +1,45 @@
 # Projects
 
-This repository contains my **course-based** and **personal** software projects, mainly built using **C, C++**, and **Java**.  
+This repository contains my **course-based** and **personal** software projects, mainly developed in **C, C++**, and **Java**.  
 Each project is organized into its own folder with a clear structure and a README explaining the idea, features, and how to run it.
 
 ---
 
 ## 📚 Course-Based Projects
 
-Projects grouped by the university courses where they were developed.
+Projects created as part of my undergraduate coursework.
 
 ### 🔸 Structured Programming Lab (C)  
 Location: [`spl-lab-c/`](spl-lab-c/)  
-Focuses on writing clean C code using modular functions, loops, arrays, pointers, and basic file handling.
-
-### 🔸 Object Oriented Programming Lab (Java)  
-Location: [`oop-lab-java/`](oop-lab-java/)  
-Covers object-oriented design in Java: classes, inheritance, abstraction, encapsulation, and Swing-based GUI applications.
+Focus on clean procedural C programming with:
+- loops and conditionals  
+- functions and modular design  
+- arrays, pointers  
+- basic file handling  
 
 ---
 
-## 🧪 Personal Projects
+### 🔸 Object Oriented Programming Lab (Java)  
+Location: [`oop-lab-java/`](oop-lab-java/)  
+Covers object-oriented design in Java, including:
+- classes and objects  
+- inheritance, abstraction, encapsulation  
+- multi-class architecture  
+- basic GUI development using Swing  
+
+---
+
+## 🧪 Personal Projects  
 
 Location: [`personal/`](personal/)  
-Projects and experiments built outside of coursework — driven by curiosity, self-learning, and practice.
+
+Independent projects built outside of coursework — focused on experimentation, self-learning, and applying concepts in practical ways.
 
 ---
 
 ## 📝 Goal
 
-My aim is to write clear, maintainable, and well-documented code while building a strong foundation in software development and core CS concepts.
+My aim is to write **clear, maintainable, and well-documented code** while building a strong foundation in software development, core CS concepts, and problem-solving.
 
 ---
 
