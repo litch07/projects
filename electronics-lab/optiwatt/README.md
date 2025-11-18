@@ -38,7 +38,11 @@ Example structure:
 
 ```
 optiwatt/
+├── proposal/
+│   ├── OptiWatt_Project_Proposal.docx
+│   └── OptiWatt_Project_Proposal.pdf 
 ├── firmware/
+│   └── OptiWatt.ino 
 ├── web-ui/
 │   ├── index.html
 │   ├── login.html
