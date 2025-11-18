@@ -1,33 +1,24 @@
 # Structured Programming Language
 
-This folder contains a simple C program made for the Structured Programming Language Lab.  
-The project is beginner-friendly and demonstrates basic file handling, searching, and record management.
+This folder contains my Structured Programming Language Lab work completed using the C programming language.  
+The contents are organized for clarity and academic submission.
 
-## 📌 Features
-- Add new records to a text file
-- Search records from the file
-- Check if a file exists
-- Simple line-spacing and formatting
-- Fully written in C with easy-to-understand logic
+## 📁 Included Project
 
-## 📁 File Structure
+### 🔹 Contact Management System
+A beginner-friendly file-based contact manager that demonstrates core SPL concepts.
+
+#### ✨ Features
+- Add new contacts to a text file  
+- Search for contacts by name  
+- Check if the data file exists before accessing  
+- Clean and simple line-spacing & formatting  
+- Fully written in basic C syntax suitable for beginners  
+- Uses standard file handling (`fopen`, `fprintf`, `fscanf`, `fgets`)  
+
+Project folder:
 ```
-└── spl-lab-c/
-    ├── main.c
-    ├── All-Contact.txt
-    └── README.md
-```
-
-## 🛠 Usage
-Compile using GCC:
-
-```bash
-gcc main.c -o program
-```
-
-Run the program:
-```bash
-./program
+spl-lab-c/contact-management-system/
 ```
 
 ## 🙋‍♂️ Author
