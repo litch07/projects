@@ -113,7 +113,22 @@ git clone https://github.com/litch07/projects.git
 cd projects/electronics-lab/optiwatt/web-ui
 ```
 
-Then open `index.html` in any browser.
+Then open `index.html` in a browser:
+
+Windows
+```Bash
+start index.html
+```
+macOS
+```Bash
+open index.html
+```
+
+Linux
+```Bash
+xdg-open index.html
+```
+Note: All data is currently demo/simulated; there is no live connection to the ESP32 yet.
 
 No server is required.
 
