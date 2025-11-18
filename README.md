@@ -1,32 +1,44 @@
 # Projects
 
-This repository contains my **course-based** and **personal** software projects, mainly built using  
-**C, C++, and Java**. Each project is organized into a separate folder with clear structure and a README explaining the idea, features, and how to run it.
+This repository contains my **course-based** and **personal** software projects, mainly developed in **C, C++, and Java**.  
+Each project is placed inside its own folder with a clear structure and a dedicated README describing the idea, features, and how to run it.
 
 ---
 
 ## 📚 Course-Based Projects
 
-Projects grouped by the university courses where they were developed:
+Projects created as part of my undergraduate coursework:
 
-### 🔸 Structured Programming Lab in C
-Location: `spl-lab-c/`  
-Focus on writing clean C code, modular functions, loops, arrays, pointers, and file handling.
+### 🔸 [Structured Programming Language Lab](spl-lab-c/)
+Focus on writing clean procedural C programs using:
+- loops, functions, arrays, pointers  
+- modular program structure  
+- file handling  
+- logical problem-solving
 
-### 🔸 Object Oriented Programming in Java
-Location: `oop-lab-java/`  
-Covers object-oriented design, Java classes, inheritance, abstraction, encapsulation, and Swing-based GUI apps.
+### 🔸 [Object Oriented Programming Lab](oop-lab-java/)
+Projects demonstrating OOP concepts and Java development:
+- classes, objects, inheritance, abstraction  
+- encapsulation and polymorphism  
+- Java Swing–based GUI applications  
+- multi-class architecture
 
 ---
 
 ## 🧪 Personal Projects
 
-Location: `personal/`  
-Projects and experiments built outside of coursework — driven by curiosity, self-learning, and practice.
+Self-driven projects built outside academic requirements:  
+Location: [`personal/`](personal/)
+
+These projects reflect curiosity, experimentation, and continuous learning — with a focus on improving design, structure, and real-world problem-solving.
 
 ---
 
-## 📝 Goal
+## 🎯 Goal
 
-My aim is to write **clear, maintainable, and well-documented code** while building a strong foundation in software development and core CS concepts.
+To maintain a clean and organized collection of my programming work, showcasing my growth in software development and strengthening my foundation in **core CS concepts**, **problem-solving**, and **clean code practices**.
 
+---
+
+## 🙋‍♂️ Author  
+**Sadid Ahmed** (`litch07`)
