@@ -9,7 +9,7 @@ Each project is organized into its own folder with a clear structure and a READM
 
 Projects created as part of my undergraduate coursework.
 
-### 🔸 Structured Programming Lab (C)  
+### 🔸 Structured Programming Language Lab 
 Location: [`spl-lab-c/`](spl-lab-c/)  
 Focus on clean procedural C programming with:
 - loops and conditionals  
@@ -19,7 +19,7 @@ Focus on clean procedural C programming with:
 
 ---
 
-### 🔸 Object Oriented Programming Lab (Java)  
+### 🔸 Object Oriented Programming Lab 
 Location: [`oop-lab-java/`](oop-lab-java/)  
 Covers object-oriented design in Java, including:
 - classes and objects  
