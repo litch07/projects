@@ -1,6 +1,6 @@
-# Structured Programming Language Lab (SPL Lab) Project
+# Structured Programming Language
 
-This repository contains a simple C program made for the SPL (Structured Programming Language) Lab.  
+This repository contains a simple C program made for the Structured Programming Language Lab.  
 The project is beginner-friendly and demonstrates basic file handling, searching, and record management.
 
 ## 📌 Features
